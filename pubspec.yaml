@@ -1,0 +1,21 @@
+name: simple_permissions
+description: Um wrapper simples e moderno para lidar com permissões, construído sobre o permission_handler.
+version: 0.1.0
+publish_to: "none"
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^11.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mockito: ^5.0.0
+  build_runner: ^2.0.0
+  permission_handler_platform_interface: ^4.3.0
