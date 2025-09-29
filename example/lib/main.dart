@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:simple_permissions/simple_permissions.dart';
+import 'package:permission_simplifier/permission_simplifier.dart';
+// ignore: depend_on_referenced_packages
 
 void main() {
   // Always ensure Flutter bindings are initialized before calling platform-specific code.
@@ -40,7 +41,9 @@ class _PermissionScreenState extends State<PermissionScreen> {
     });
 
     // 1. Chama o Manager do seu pacote
-    final result = await SimplePermissionManager.request(Permission.location);
+    final result = await PermissionSimplifierManager.request(
+      Permission.location,
+    );
 
     // 2. Trata o resultado
     if (result.isGranted) {
@@ -49,6 +52,7 @@ class _PermissionScreenState extends State<PermissionScreen> {
         _locationGranted = true;
       });
       ScaffoldMessenger.of(
+        // ignore: use_build_context_synchronously
         context,
       ).showSnackBar(const SnackBar(content: Text('Localização concedida!')));
     } else if (result.requiresSettingsOpen) {
@@ -61,6 +65,7 @@ class _PermissionScreenState extends State<PermissionScreen> {
 
       // Chamando o SimpleDeniedAlert dentro do contexto de Scaffold
       showDialog(
+        // ignore: use_build_context_synchronously
         context: context,
         builder: (context) => const SimpleDeniedAlert(),
       );

@@ -2,7 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
 import 'package:permission_handler_platform_interface/permission_handler_platform_interface.dart';
-import 'package:simple_permissions/src/simple_permission_manager.dart';
+import 'package:permission_simplifier/src/simple_permission_manager.dart';
 
 class MockPermissionHandlerPlatform extends PermissionHandlerPlatform
     with Mock {

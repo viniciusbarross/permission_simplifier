@@ -215,6 +215,13 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.1"
+  permission_simplifier:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "1.0.0"
   platform:
     dependency: transitive
     description:
@@ -239,13 +246,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.0.5"
-  simple_permissions:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.1.0"
   sky_engine:
     dependency: transitive
     description: flutter

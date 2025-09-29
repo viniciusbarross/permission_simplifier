@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../simple_permission_manager.dart';
+import '../permission_simplifier_manager.dart';
 
 /// A basic dialog widget to inform the user when a permission has been
 /// permanently denied and needs to be activated in the system settings.
@@ -27,7 +27,7 @@ class SimpleDeniedAlert extends StatelessWidget {
         TextButton(
           onPressed: () {
             Navigator.of(context).pop();
-            SimplePermissionManager.openSettings();
+            PermissionSimplifierManager.openSettings();
           },
           child: const Text('ABRIR CONFIGURAÇÕES'),
         ),

@@ -1,14 +1,14 @@
 import 'package:flutter/foundation.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'simple_permission_result.dart'; // Importação do arquivo no mesmo diretório
+import 'permission_simplifier_result.dart'; // Importação do arquivo no mesmo diretório
 
 /// A static manager to simplify the process of requesting and handling
 /// permissions in Flutter.
 ///
 /// It abstracts the complexity of [permission_handler] by automatically
 /// handling the [PermissionStatus.permanentlyDenied] state.
-class SimplePermissionManager {
-  SimplePermissionManager._();
+class PermissionSimplifierManager {
+  PermissionSimplifierManager._();
 
   /// Requests a specific [permission] in a simplified manner.
   ///

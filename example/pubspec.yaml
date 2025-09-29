@@ -1,8 +1,8 @@
-name: simple_permissions_example
-description: "Demonstrates how to use the simple_permissions plugin."
+name: permission_simplifier_example
+description: "Demonstrates how to use the permission_simplifier plugin."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
 
 environment:
   sdk: ^3.9.2
@@ -17,9 +17,9 @@ dependencies:
   flutter:
     sdk: flutter
 
-  simple_permissions:
+  permission_simplifier:
     # When depending on this package from a real application you should use:
-    #   simple_permissions: ^x.y.z
+    #   permission_simplifier: ^x.y.z
     # See https://dart.dev/tools/pub/dependencies#version-constraints
     # The example app is bundled with the plugin so we use a path dependency on
     # the parent directory to use the current plugin's version.
@@ -47,7 +47,6 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

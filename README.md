@@ -14,14 +14,14 @@ This package ensures a better User Experience (UX) by providing a clear API for 
 
 ### 1. Add Dependencies
 
-Add `simple_permissions` and `permission_handler` to your `pubspec.yaml`:
+Add `permission_simplifier` and `permission_handler` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
   flutter:
     sdk: flutter
   permission_handler: ^11.0.0
-  simple_permissions: ^1.0.0
+  permission_simplifier: ^1.0.0
 ```
 
 Then run flutter pub get.
@@ -65,7 +65,7 @@ Use the SimplePermissionManager to request a permission and decide the next acti
 ```dart
 import 'package:flutter/material.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:simple_permissions/simple_permissions.dart';
+import 'package:permission_simplifier/permission_simplifier.dart';
 
 Future<void> requestLocationPermission(BuildContext context) async {
   // 1. Request the permission using the simplified manager

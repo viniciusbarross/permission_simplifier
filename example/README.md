@@ -1,6 +1,6 @@
-# simple_permissions_example
+# permission_simplifier_example
 
-Demonstrates how to use the simple_permissions plugin.
+Demonstrates how to use the permission_simplifier plugin.
 
 ## Getting Started
 
