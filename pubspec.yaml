@@ -1,7 +1,10 @@
 name: simple_permissions
 description: Um wrapper simples e moderno para lidar com permissões, construído sobre o permission_handler.
-version: 0.1.0
+version: 0.0.1
 publish_to: "none"
+homepage: https://github.com/viniciusbarross/simple_permissions
+repository: https://github.com/viniciusbarross/simple_permissions
+license: MIT
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
